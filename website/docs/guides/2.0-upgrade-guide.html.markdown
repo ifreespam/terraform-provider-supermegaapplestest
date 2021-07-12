@@ -1,0 +1,12 @@
+---
+layout: "themain"
+page_title: "Resource Manager: 2.0 Upgrade Guide"
+description: |-
+Resource Manager: 2.0 Upgrade Guide description
+
+---
+
+# The 2.0 upgrade guide for old users :)
+
+Here's something about upgrading process.
+Since this is an experimental text, I won't describe more.
