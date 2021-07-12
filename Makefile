@@ -8,6 +8,15 @@ OS_ARCH=darwin_amd64
 
 default: install
 
+format:
+	go fmt ./...
+
+check:
+	go vet ./...
+
+test:
+	go test -v ./...
+
 build:
 	go build -o ${BINARY}
 
