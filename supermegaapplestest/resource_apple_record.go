@@ -35,7 +35,7 @@ func resourceAppleRecord() *schema.Resource {
 			"count_items": {
 				Type:        schema.TypeInt,
 				Optional:    true,
-				Description: "The count of an apple",
+				Description: "The count of an apple (UPDATED)",
 				Default:     10,
 			},
 		},
