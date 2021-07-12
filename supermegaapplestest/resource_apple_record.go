@@ -30,7 +30,7 @@ func resourceAppleRecord() *schema.Resource {
 			"sort": {
 				Type:        schema.TypeString,
 				Required:    true,
-				Description: "The sort of an apple",
+				Description: "The sort of an apple AND UPDATED",
 			},
 			"count_items": {
 				Type:        schema.TypeInt,
