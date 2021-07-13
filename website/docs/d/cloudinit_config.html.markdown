@@ -1,5 +1,5 @@
 ---
-layout: "template"
+layout: "supermegaapplestest"
 page_title: "Template: cloudinit_multipart"
 sidebar_current: "docs-template-datasource-cloudinit-config"
 description: |-

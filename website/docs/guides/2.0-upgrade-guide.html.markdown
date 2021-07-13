@@ -1,5 +1,5 @@
 ---
-layout: "themain"
+layout: "supermegaapplestest"
 page_title: "Resource Manager: 2.0 Upgrade Guide"
 description: |-
 Resource Manager: 2.0 Upgrade Guide description

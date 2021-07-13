@@ -1,5 +1,5 @@
 ---
-layout: "template"
+layout: "supermegaapplestest"
 page_title: "Template: template_file"
 sidebar_current: "docs-template-datasource-file"
 description: |-

@@ -1,5 +1,5 @@
 ---
-layout: "anothermain"
+layout: "supermegaapplestest"
 page_title: "SOmething about: more"
 description: |-
  I would like to describe this one

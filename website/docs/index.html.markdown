@@ -1,5 +1,5 @@
 ---
-layout: "themain"
+layout: "supermegaapplestest"
 page_title: "themain page title"
 sidebar_current: "themain_sidebar"
 description: |-

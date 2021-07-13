@@ -1,6 +1,6 @@
 ---
 subcategory: "Yellow apples"
-layout: "themain"
+layout: "supermegaapplestest"
 page_title: "Template: apple"
 sidebar_current: "super_apple_sidebar"
 description: |-
