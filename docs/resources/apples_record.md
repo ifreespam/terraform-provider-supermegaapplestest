@@ -26,3 +26,8 @@ description: |-
 - **id** (String) The ID of this resource.
 
 
+We recommend to read some moment [about new guide](../guides/new-guide.md)
+
+We recommend to read some moment [about new guide v2](/docs/guides/new-guide.md)
+
+We recommend to read some moment [about new guide v3](docs/guides/new-guide.md) 
