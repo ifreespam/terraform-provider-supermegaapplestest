@@ -18,3 +18,7 @@ description: |-
 ### Required
 
 - **user_name** (String) User name identifier
+
+## Contributing
+
+I trust that's it!
