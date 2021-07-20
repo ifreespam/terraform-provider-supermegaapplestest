@@ -37,6 +37,13 @@ jobs:
     runs-on: self-hosted
     needs: check
     steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.16
+
       - name: Acceptance Test3
         run: make testacc
         env:
