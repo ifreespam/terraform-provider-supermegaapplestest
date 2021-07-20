@@ -30,10 +30,6 @@ jobs:
       - name: Test
         run: make test
 
-      - name: Acceptance Test
-        run: make testacc
-        env:
-          RANDOM_ENV: ${{ secrets.THETEST_THE_VAL }}
 
       - name: Acceptance Test2
         run: make testacc
