@@ -33,4 +33,4 @@ jobs:
       - name: Acceptance Test
         run: make testacc
         env:
-          RANDOM_ENV: ${{ env.TESTS.RANDOM_ENV }}
+          RANDOM_ENV: ${{ secrets.RANDOM_ENV }}
