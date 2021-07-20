@@ -8,8 +8,7 @@ on:
 jobs:
 
   check:
-    environment: TESTS
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
@@ -31,6 +30,11 @@ jobs:
       - name: Test
         run: make test
 
+  acceptance_test:
+    environment: TESTS
+    runs-on: self-hosted
+    needs: check
+    steps:
       - name: Acceptance Test3
         run: make testacc
         env:
