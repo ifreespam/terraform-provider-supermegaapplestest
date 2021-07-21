@@ -44,15 +44,27 @@ jobs:
   acceptance:
     name: Acceptance test
     environment: TESTS
-    runs-on: self-hosted
+#    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: check
     steps:
       - uses: actions/checkout@v2
 
-      - name: Set up Go
-        uses: actions/setup-go@v2
-        with:
-          go-version: 1.16
+#      - name: Set up Go
+#        uses: actions/setup-go@v2
+#        with:
+#          go-version: 1.16
+
+
+       - name: Manual go setup
+         run: |
+           pwd
+           curl https://dl.google.com/go/go1.16.6.linux-amd64.tar.gz -o go1.16.6.linux-amd64.tar.gz
+           rm -rf .go-instance
+           mkdir .go-instance
+           tar -C .go-instance -xzf go1.16.6.linux-amd64.tar.gz
+           export PATH=$PATH:$(pwd)/.go-instance
+           go version
 
       - name: Acceptance Test3
         run: make testacc
