@@ -55,16 +55,15 @@ jobs:
 #        with:
 #          go-version: 1.16
 
-
-       - name: Manual go setup
-         run: |
-           pwd
-           curl https://dl.google.com/go/go1.16.6.linux-amd64.tar.gz -o go1.16.6.linux-amd64.tar.gz
-           rm -rf .go-instance
-           mkdir .go-instance
-           tar -C .go-instance -xzf go1.16.6.linux-amd64.tar.gz
-           export PATH=$PATH:$(pwd)/.go-instance
-           go version
+      - name: Manual go setup
+        run: |
+          pwd
+          curl https://dl.google.com/go/go1.16.6.linux-amd64.tar.gz -o go1.16.6.linux-amd64.tar.gz
+          rm -rf .go-instance
+          mkdir .go-instance
+          tar -C .go-instance -xzf go1.16.6.linux-amd64.tar.gz
+          export PATH=$PATH:$(pwd)/.go-instance
+          go version
 
       - name: Acceptance Test3
         run: make testacc
