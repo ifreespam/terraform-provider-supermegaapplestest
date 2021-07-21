@@ -21,12 +21,11 @@ jobs:
       - name: Manual go setup
         run: |
           pwd
-          ls -lh
           curl https://dl.google.com/go/go1.16.6.linux-amd64.tar.gz -o go1.16.6.linux-amd64.tar.gz
-          ls -lh
-          rm -rf /usr/local/go
-          tar -C /usr/local -xzf go1.16.6.linux-amd64.tar.gz
-          export PATH=$PATH:/usr/local/go/bin
+          rm -rf _go_
+          mkdir _go_
+          tar -C _go_ -xzf go1.16.6.linux-amd64.tar.gz
+          export PATH=$PATH:$(pwd)/_go_
           go version
 
       - name: Check
