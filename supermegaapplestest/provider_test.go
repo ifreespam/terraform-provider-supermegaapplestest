@@ -19,7 +19,7 @@ func TestAccSecond(t *testing.T) {
 	skipTestIfNoTFAccFlag(t)
 	testRandomEnvAvailable(t)
 	fmt.Println("[DEBUG] TestAccSecond start")
-	time.Sleep(time.Second * 31)
+	time.Sleep(time.Second * 30)
 	fmt.Println("[DEBUG] TestAccSecond done")
 }
 
