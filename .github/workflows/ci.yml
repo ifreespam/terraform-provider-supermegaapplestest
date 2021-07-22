@@ -36,6 +36,7 @@ jobs:
     environment: TESTS
     runs-on: ubuntu-latest
     needs: check
+    concurrency: acceptance_test
     steps:
       - uses: actions/checkout@v2
 
