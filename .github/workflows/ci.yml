@@ -5,6 +5,8 @@ on:
     branches:
       - '**'
 
+concurrency: acceptance_test
+
 jobs:
 
   check:
@@ -36,7 +38,6 @@ jobs:
     environment: TESTS
     runs-on: ubuntu-latest
     needs: check
-    concurrency: acceptance_test
     steps:
       - uses: actions/checkout@v2
 
