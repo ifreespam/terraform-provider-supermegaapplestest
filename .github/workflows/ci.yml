@@ -8,7 +8,6 @@ on:
 concurrency: acceptance_test
 
 jobs:
-
   check:
     name: Check
     runs-on: ubuntu-latest
@@ -45,6 +44,21 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: 1.16
+
+      - name: Set up env
+        env:
+          RANDOM_ENV: ${{ secrets.THE_VAL }}
+        run: |
+          echo "RANDOM_ENV = $RANDOM_ENV"
+          echo $RANDOM_ENV > env-file.sh
+          export
+
+      - name: Print env
+        run: |
+          ls -la
+          echo $RANDOM_ENV
+          export
+          cat env-file.sh
 
       - name: Acceptance Test3
         run: make testacc
